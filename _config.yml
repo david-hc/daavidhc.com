@@ -1,0 +1,21 @@
+title: David HC
+description: ""
+baseurl: "/"
+permalink: /:path/
+
+# Defaults
+defaults:
+  - scope:
+      path: "_posts"
+    values:
+      layout: post
+      permalink: /:title
+
+sass:
+  sass_dir: assets
+  style: compressed
+
+# HTML Compression
+compress_html:
+  clippings: all
+  endings: all

@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<article>
+  <header>
+    <h3 class="post-title">{{ page.title }}</h3>
+    {% if page.desc %}
+      <p class="post-desc">{{ page.desc }}</p>
+    {% endif %}
+    {% if page.date %}
+      <span class="post-meta">
+        {{ page.date | date: "%A, %-d %B %Y"}}
+        {% if page.lang %}
+          · {{ page.lang }}
+        {% endif %}
+      </span>
+    {% endif %}
+  </header>
+
+  {{ content }}
+
+  {% if page.previous.url or page.next.url %}
+    <div class="post-navigation">
+      <div class="post-navigation-col prev">
+        {% if page.next.url %}
+          <span>Newer Post</span>
+          <a title="Read newer post" href="{{page.next.url}}">{{page.next.title}}</a>
+        {% endif %}
+      </div>
+      <div class="post-navigation-col next">
+        {% if page.previous.url %}
+          <span>Older Post</span>
+          <a title="Read older Post" href="{{page.previous.url}}">{{page.previous.title}}</a>
+        {% endif %}
+      </div>
+    </div>
+  {% endif %}
+</article>
