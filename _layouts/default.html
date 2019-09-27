@@ -28,7 +28,7 @@ layout: compress
   	<ul>
       {% for item in site.data.navigation offset:1 %}
         <li>
-          <a href="{{ item.link }}" title="{{ item.name }}">{{ item.name }}</a>
+          <a href="{{ item.link }}" title="{{ item.title }}">{{ item.name }}</a>
         </li>
       {% endfor %}
   	</ul>
@@ -37,26 +37,31 @@ layout: compress
     {{ content }}
   </main>
   <footer>
-  	<div class="footer-column">
-  		<span>Links</span>
-  		<ul>
-        {% for item in site.data.navigation %}
-          <li>
-            <a href="{{ item.link }}" title="{{ item.name }}">{{ item.name }}</a>
-          </li>
-        {% endfor %}
-  		</ul>
-  	</div>
-  	<div class="footer-column">
-  		<span>Elsewhere</span>
-  		<ul>
-        {% for item in site.data.elsewhere %}
-          <li>
-            <a target="blank" href="{{ item.link }}" title="{{ item.link }}">{{ item.name }}</a>
-          </li>
-        {% endfor %}
-  		</ul>
-  	</div>
+    <div class="footer-wrap">
+    	<div class="footer-column">
+    		<span>Links</span>
+    		<ul>
+          {% for item in site.data.navigation %}
+            <li>
+              <a href="{{ item.link }}" title="{{ item.title }}">{{ item.name }}</a>
+            </li>
+          {% endfor %}
+    		</ul>
+    	</div>
+    	<div class="footer-column">
+    		<span>Elsewhere</span>
+    		<ul>
+          {% for item in site.data.elsewhere %}
+            <li>
+              <a target="blank" href="{{ item.link }}" title="{{ item.title }}">{{ item.name }}</a>
+            </li>
+          {% endfor %}
+    		</ul>
+    	</div>
+    </div>
+    <div class="footer-copyright">
+      © {{ 'now' | date: "%Y" }} David HC. All right reserved. 
+    </div>
   </footer>
   <script type="text/javascript" src="/assets/main.js"></script>
 </body>

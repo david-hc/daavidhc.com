@@ -1,4 +1,6 @@
 - link: /
   name: Home
+  title: Back to Homepage
 - link: mailto:daavidhc@gmail.com
-  name: Email
+  name: Contact
+  title: Mail me at daavidhc@gmail.com
