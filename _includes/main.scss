@@ -1,42 +1,29 @@
----
-# Version 1
----
-
-
 :root {
 	--font-size: 17px;
 	--baseline: 30px;
 	--half-baseline: calc(var(--baseline) / 2);
-
 	--text-color: #444;
 	--gray-color: #999;
 	--border-color: #DDD;
 }
 
 html, body, div, span,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1, h2, h3, h4, p, blockquote, pre,
 a, abbr, acronym, cite, code,
-del, dfn, em, img, ins, kbd, strike, strong, sub, sup,
-b, u, i, dl, dt, dd, ol, ul, li,
-table, caption, tbody, tfoot, thead, tr, th, td, article, aside,
-figure, figcaption, footer, header, hgroup,
-nav, output, section, time, mark {
+del, em, img, ins, strike, strong, sub, sup,
+b, u, i, ol, ul, li,
+table, tr, th, td, article, aside,
+figure, figcaption, footer, header,
+nav, section, time {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
-/**
-html {
-	background-image: linear-gradient(to bottom, rgba(0, 170, 255, .3) 1px, transparent 1px);
-	background-position: left top;
-	background-repeat: repeat;
-	background-size: 100% var(--baseline);
-}**/
 
 body {
 	--padding: 5vw;
 
-	font: var(--font-size)/var(--baseline) "Acumin", Helvetica, sans-serif;
+	font: var(--font-size)/var(--baseline) "Acumin", sans-serif;
 	color: var(--text-color);
 	max-width: calc(600px + var(--padding) * 2);
 	margin: calc(var(--baseline) * 2) auto;

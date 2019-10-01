@@ -1,6 +1,5 @@
 title: David HC
 description: ""
-baseurl: "/"
 permalink: /:path/
 
 # Defaults
@@ -12,7 +11,6 @@ defaults:
       permalink: /:title
 
 sass:
-  sass_dir: assets
   style: compressed
 
 # HTML Compression

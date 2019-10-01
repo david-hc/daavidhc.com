@@ -1,13 +1,1 @@
-function adjustImg(a) {
-  var b = document.getElementsByTagName(a),
-      c = parseInt(window.getComputedStyle(document.body).getPropertyValue("line-height")),
-      d = c / 2;
-  for (i = 0; i < b.length; i++) {
-    var e = b[i].offsetWidth / b[i].offsetHeight, f = b[i].offsetWidth / e, g = Math.round(f / d), h = d * g;
-    b[i].style.height = h + "px";
-  }
-}
-
-window.addEventListener("load", function() {
-  adjustImg("img");
-}, false);
+window.addEventListener("load",function(){var a=document.getElementsByTagName("img"),o=parseInt(window.getComputedStyle(document.body).getPropertyValue("line-height")),n=o/2;for(i=0;i<a.length;i++){var m=a[i].offsetWidth/a[i].offsetHeight,l=a[i].offsetWidth/m,k=Math.round(l/n),j=n*k;a[i].style.height=j+"px"}},false);
