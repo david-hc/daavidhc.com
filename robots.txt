@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: http://daavidhc.com/sitemap.xml

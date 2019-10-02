@@ -4,28 +4,29 @@ layout: compress
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script type="text/javascript">
+  <script>
     function loadFont(a,b,c){function d(){if(!window.FontFace)return!1;var a=new FontFace("t",'url("data:application/font-woff2,") format("woff2")');return a.load(),"loading"===a.status}var e=navigator.userAgent,f=!window.addEventListener||e.match(/(Android (2|3|4.0|4.1|4.2|4.3))|(Opera (Mini|Mobi))/)&&!e.match(/Chrome/);if(!f){var g={};try{g=localStorage||{}}catch(h){}var i="x-font-"+a,j=i+"url",k=i+"css",l=g[j],m=g[k],n=document.createElement("style");if(n.rel="stylesheet",document.head.appendChild(n),!m||l!==b&&l!==c){var o=c&&d()?c:b,p=new XMLHttpRequest;p.open("GET",o),p.onload=function(){p.status>=200&&p.status<400&&(g[j]=o,g[k]=n.textContent=p.responseText)},p.send()}else n.textContent=m}}
   </script>
-  <script type="text/javascript">
-    loadFont("Acumin", "/assets/fonts-woff.css", "/assets/fonts-woff2.css");
-  </script>
+  <script>loadFont("Acumin", "/assets/fonts-woff.css", "/assets/fonts-woff2.css")</script>
+  <style>
+    {% capture inline_css %}
+      {% include main.scss %}
+    {% endcapture %}
+    {{ inline_css | scssify }}
+  </style>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
   <title>
     {% if page.title %}
       {{ page.title }} -
     {% endif %}
     {{ site.title }}
   </title>
-  <style type="text/css">
-    {% capture inline_css %}
-      {% include main.scss %}
-    {% endcapture %}
-    {{ inline_css | scssify }}
-  </style>
+
+  <!-- SEO Tags -->
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+
 </head>
 <body>
   <nav>
@@ -68,6 +69,6 @@ layout: compress
       © {{ 'now' | date: "%Y" }} David HC. All right reserved.
     </div>
   </footer>
-  <script type="text/javascript">window.addEventListener("load",function(){var a=document.getElementsByTagName("img"),o=parseInt(window.getComputedStyle(document.body).getPropertyValue("line-height")),n=o/2;for(i=0;i<a.length;i++){var m=a[i].offsetWidth/a[i].offsetHeight,l=a[i].offsetWidth/m,k=Math.round(l/n),j=n*k;a[i].style.height=j+"px"}},false);</script>
+  <script>window.addEventListener("load",function(){var a=document.getElementsByTagName("img"),o=parseInt(window.getComputedStyle(document.body).getPropertyValue("line-height")),n=o/2;for(i=0;i<a.length;i++){var m=a[i].offsetWidth/a[i].offsetHeight,l=a[i].offsetWidth/m,k=Math.round(l/n),j=n*k;a[i].style.height=j+"px"}},false);</script>
 </body>
 </html>
