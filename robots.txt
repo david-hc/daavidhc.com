@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: http://daavidhc.com/sitemap.xml
+Sitemap: https://daavidhc.com/sitemap.xml
