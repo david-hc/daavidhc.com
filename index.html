@@ -7,7 +7,7 @@ sitemap:
 <section>
 	<h2>Hi there!</h2>
 	<figure class="post-figure profile-figure">
-		<img title="I'm not sad" alt="I'm not sad" src="/assets/me.webp">
+		<img title="I'm not sad" alt="Photo of David HC" src="/assets/me.webp">
 	</figure>
 	<p>I'm David; a typography lover, web designer, and musician. Doing web design for 8 years with specialty in minimal design and web typography. I deliver good looking and readable text on-screen. Currently a BA student in <a target="_blank" href="https://president.ac.id">President University</a>.</p>
 </section>
@@ -16,12 +16,12 @@ sitemap:
 	<h2>Posts</h2>
 	<ul class="post-list">
 		{% for post in site.posts %}
-      <li>
-				<h3>
-					<a title="{% if post.desc %}{{ post.desc }} {% else %} {{ post.title }}{% endif %}" href="{{ post.url }}">{{ post.title }}</a>
-				</h3>
-				<span class="post-meta">{{ post.date | date: "%-d %b %Y"  }}{% if post.lang %} · {{ post.lang }}{% endif %}</span>
-			</li>
+    <li>
+			<h3>
+        <a title="{% if post.desc %}{{ post.desc }} {% else %} {{ post.title }}{% endif %}" href="{{ post.url }}">{{ post.title }}</a>
+			</h3>
+      <span class="post-meta">{{ post.date | date: "%-d %b %Y"  }}{% if post.lang %} · {{ post.lang }}{% endif %}</span>
+		</li>
     {% endfor %}
 	</ul>
 </section>
