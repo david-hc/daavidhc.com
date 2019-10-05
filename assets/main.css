@@ -174,7 +174,7 @@ p > a {
 	text-decoration: underline;
 }
 
-p, blockquote, .post-figure, article ol, article ul {
+p, blockquote, .post-figure, article ol, article ul, pre {
 	margin-bottom: var(--baseline);
 }
 
@@ -185,6 +185,12 @@ blockquote {
 
 blockquote p {
 	margin-bottom: var(--half-baseline);
+}
+
+pre {
+	font-size: 0.85rem;
+	background: hsla(31,15%, 50%,.1);
+	padding: var(--half-baseline);
 }
 
 @media (min-width: 800px) {
