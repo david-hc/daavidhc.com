@@ -22,7 +22,6 @@ nav, section, time {
 
 body {
 	--padding: 5vw;
-
 	font: var(--font-size)/var(--baseline) "Acumin", sans-serif;
 	color: var(--text-color);
 	max-width: calc(600px + var(--padding) * 2);
@@ -188,8 +187,8 @@ blockquote p {
 }
 
 pre {
-	font-size: 0.85rem;
-	background: hsla(31,15%, 50%,.1);
+	font-family: Consolas, monaco, monospace;
+	background: #F4F4F4;
 	padding: var(--half-baseline);
 }
 
