@@ -4,7 +4,7 @@ layout: default
 
 <article>
   <header>
-    {% if.page.title %}
+    {% if page.title %}
       <h3 class="post-title">{{ page.title }}</h3>
     {% endif %}
     {% if page.desc %}
@@ -15,12 +15,6 @@ layout: default
         {{ page.date | date: "%A, %-d %B %Y"}}
         {% if page.lang %}
           · {{ page.lang }}
-        {% endif %} ·
-        {% assign words = content | number_of_words %}
-        {% if words > 180 %}
-          {{ words | divided_by:180 }} mins
-          {% else %}
-          1 min read
         {% endif %}
       </span>
     {% endif %}

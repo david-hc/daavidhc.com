@@ -173,17 +173,16 @@ p > a {
 	text-decoration: underline;
 }
 
-p, blockquote, .post-figure, article ol, article ul, pre {
+p, figure, article ol, article ul, pre {
 	margin-bottom: var(--baseline);
 }
 
 blockquote {
-	padding-left: var(--baseline);
-	border-left: 3px solid #CCC;
+	padding-left: calc(var(--baseline) * 1.5);
 }
 
-blockquote p {
-	margin-bottom: var(--half-baseline);
+blockquote + figcaption {
+	text-align: right;
 }
 
 pre {
@@ -193,7 +192,7 @@ pre {
 }
 
 @media (min-width: 800px) {
-	.post-figure {
+	.img-figure {
 		width: calc(100% + 4rem);
 		margin-left: -2rem;
 	}
