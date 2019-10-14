@@ -21,7 +21,7 @@ nav, section, time {
 }
 
 body {
-	--padding: 5vw;
+	--padding: 7vw;
 	font: var(--font-size)/var(--baseline) "Acumin", sans-serif;
 	color: var(--text-color);
 	max-width: calc(600px + var(--padding) * 2);
