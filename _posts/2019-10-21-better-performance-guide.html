@@ -1,0 +1,83 @@
+---
+title: 4 tips untuk mempercepat performa situs
+lang: id
+desc: Fasten, Faster, Fastest.
+---
+<p>
+  Performa situs yang merupakan salah satu dasar dalam membangun situs. Performa pun dapat diukur
+  dengan kecepatan loading sebuah situs. Apabila situs yang dikunjungi lama untuk load atau status
+  siap digunakan. Pengunjung kemungkinan besar akan kembali atau menutup jendela browser. Itu dikarenakan
+  ada masalah dalam faktor performa situs.
+</p>
+<p>
+  Mungkin ini saatnya bagi saya untuk membagi apapun yang saya tau mengenai web design dan engineer.
+  Dari pada saya selalu memberikan postingan opini dan personal. Alangkah baiknya mungkin hal demikian
+  lebih membantu dan berfaedah.
+</p>
+<p>
+  Ada 4 tips yang bisa saya berikan untuk mempercepat baik itu dari sisi front-end (onpage) atau
+  back-end. Kedua nya sama sama penting dan berdampak besar.
+</p>
+<h4>1. Minifikasi Resources (Image, HTML, CSS dan Javascript)</h4>
+<p>
+  Ini merukapan tips front-page yang artinya dapat diaplikasi kan untuk static website seperti Jekyll dan
+  Blogger. Minifikasi disini artinya mengecilkan ukuran size file resources dengan tujuan agar pengunduhan
+  resources tersebut lebih cepat.
+</p>
+<p>
+  Cara kerjanya pun simple sekali. Kalian hanya perlu memasukkan unminified code ke tool yang tesedia
+  di internet seperti <a href="https://csscompressor.com/" target="_blank">CSS Compressor</a>. Berikut adalah
+  sample unminified dan minified code.
+</p>
+<pre>
+.element {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+</pre>
+<p>Menjadi..</p>
+<pre>
+.element{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-o-box-sizing:border-box;box-sizing:border-box}
+</pre>
+<h4>2. Mulai menggunakan format Webp sebagai pengganti JPG/PNG</h4>
+<p>
+  Webp merupakan format grafik baru yang diperkenalkan oleh Google. Webp sendiri bersifat lossless
+  sehingga kualitas foto tidak akan berkurang. Keuntungan nya sendiri format gambar Webp jauh lebih
+  kecil dibandingkan JPG ataupun PNG. Dengan menggunakan gambar format Webp, situs pun akan jauh
+  lebih cepat apabila situs berisi penuh dengan gambar.
+</p>
+<h4>3. Leverage Caching</h4>
+<p>
+  Leverage Caching adalah peningkatan durasi bagi cache untuk disimpan dikomputer lokal. Cache sendiri adalah
+  resources yang sudah didownload dalam kunjungan pertama dan disimpan didalam komputer pengguna. Browser akan
+  menggunakan cache apabila mengunjungi ke website yang sama, sehingga tidak usah lagi mendownload resources
+  yang sama.
+</p>
+<p>
+  Lamanya caching juga disarankan lebih dari 24 jam. Bahkan apabila dibawah 24 jam, Google Web Insight akan
+  memberikan peringatan untuk meningkatkan lagi durasi caching. Untuk situs saya, saya tetapkan 5 hari.
+</p>
+<h4>4. Menggunakan CDN</h4>
+<p>
+  CDN atau disebut Content Delivery Network adalah layanan yang memberikan kecepatan pengunduhan resources
+  dengan menghubungkan user dengan server paling dekat dengan lokasi user. Contoh apabila saya tidak menggunakan
+  CDN, network saya di Indonesia akan mengunduh gambar dari server hosting di Amerika. Karena adanya
+  jarak geografik, ini menjadikan unduh lebih lelet dibandingkan apabila saya mengunduh dari server Malaysia contohnya.
+</p>
+<p>
+  CDN pun ada yang gratis seperti <a href="https://www.cloudflare.com" target="_blank">Cloudflare</a>.
+  Saat ini pun situs saya dengan senang hati menggunakan CDN Cloudflare yang gratis. Untuk penggunaan CDN,
+  jangan mikir dan pertimbangkan efek dari CDN worth it sekali menurut saya.
+</p>
+<h4>Kesimpulan</h4>
+<p>
+  Sebenarnya banyak sekali hal-hal detail yang bisa dicustomize untuk meningkatkan performa situs. Hanya saja
+  tweak kecil kurang berdampak pada real-performance. 4 tips diatas adalah tips yang benar-benar "life-changing".
+  Dampaknya sangat terasa bagi situs.
+</p>
+<p>
+  Jadikanlah performa nomor 1, tampilan atau design nomor 2. Kalo situs nya indah dan cantik tapi memerlukan
+  30 detik untuk loading. Pengunjungnya mungkin sudah kembali atau bosan duluan. Thanks
+</p>
