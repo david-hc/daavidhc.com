@@ -10,7 +10,7 @@ sections:
 - type: jekyll-posts
   label: Posts
   create: all
-  new_doc_ext: ".html"
+  new_doc_ext: html
   templates:
   - blog-post
 upload_dir: assets/images
