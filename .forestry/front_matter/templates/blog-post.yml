@@ -4,10 +4,13 @@ hide_body: false
 fields:
 - type: text
   name: title
-  label: title
+  label: Blog Title
 - type: text
   name: lang
-  label: lang
+  label: Language
+  config:
+    required: false
+  default: en
 - type: text
   name: desc
-  label: desc
+  label: Post Description
