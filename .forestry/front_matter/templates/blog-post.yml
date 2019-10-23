@@ -14,5 +14,3 @@ fields:
 - type: text
   name: desc
   label: Post Description
-pages:
-- _posts/test.html
