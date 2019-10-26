@@ -1,0 +1,16 @@
+---
+label: Blog Post
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: Blog Title
+- type: text
+  name: lang
+  label: Language
+  config:
+    required: false
+  default: en
+- type: text
+  name: desc
+  label: Post Description
